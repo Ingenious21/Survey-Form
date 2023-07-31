@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Undergraduate Students Survey Form</h1>
+        <p id="description">This is a sample survey targeting Undergraduate students within the Republic of Liberia to know the contained statistical information as seen in this form.</p>
+
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name <input name="name" id="name" type="text" placeholder="Enter your name..." required> </label>
+                <label for="email" id="email-label">Email <input name="email" id="email" type="email" placeholder="Enter your email..." required> </label>
+                <label for="number" id="number-label">Age <input name="number" id="number" type="number" placeholder="Enter your age..." pattern="[0-9]*" min="17" max="120" requuire> </label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">Undergraduate Status <select id="dropdown">
+                    <option>Select Status</option>
+                    <option>Freshman</option>
+                    <option>Sophomore</option>
+                    <option>Junior</option>
+                    <option>Senior</option>
+                </select></label>
+            </fieldset>
+            <fieldset>
+                <p>Who is financing your study?</p>
+                <label for="financial-source"><input id="parents-or-guardians" name="financial-source" type="radio" value="parents-or-guardians">Parent(s)/Guardian(s)</label>
+                <label for="financial-source"><input id="sponsors" name="financial-source" type="radio" value="sponsors">Sponsor(s)</label>
+                <label for="financial-source"><input id="scholarship" name="financial-source" type="radio" value="scholarship">Scholarship</label>
+                <label for="financial-source"><input id="myself" name="financial-source" type="radio" value="myself">Myself</label>
+            </fieldset>
+            <fieldset>
+                <p>What are your interests?</p>
+                <label for="science"><input type="checkbox" name="interests" value="science">Science</label>
+                <label for="mathematics"><input type="checkbox" name="interests" value="mathematics">Mathematics</label>
+                <label for="technology"><input type="checkbox" name="interests" value="technology">Technology</label>
+                <label for="arts-and-humanities"><input type="checkbox" name="interests" value="arts-and-humanities">Arts and Humanities</label>
+            </fieldset>
+            <fieldset>
+                <p>Tell us about yourself:</p>
+                <textarea placeholder="Hi, my name is Sarah..."></textarea>
+            </fieldset>
+            <input type="submit" id="submit" name="submit" value="submit">
+        </form>
+        <footer>
+            <h6>Ingenious @2023</h6>
+        </footer>
+    </body>
+</html>
